@@ -51,12 +51,12 @@ Other algorithms can be manually selected by changing the `algo` parameter:
 'cho-co-la-de-taart'
 ```
 
-Two algorithms have specific parameters that influence their syllabification. For `alg='l'` (which selects liang's algorithm), `pattern=x` 
-where `x` is a value between 1 and 4 selects one of four default libraries. Currently, library 4 is the default.
-
 * **!Note!**  Syllabificator employs custom seperator patterns for the Liang algorithm. Pyphen is the current decoder used but it does not support external libraries. 
 As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
 native Dutch pattern libraries instead.
+
+Two algorithms have specific parameters that influence their syllabification. For `alg='l'` (which selects liang's algorithm), `pattern=x` 
+where `x` is a value between 1 and 4 selects one of four default libraries. Currently, library 4 is the default.
 
 For `alg='w'`, the number of comparisons with other words from the dictionary can be specified through `w_size=x`. If left empty, it will automatically 
 select 2000 words to compare against. Note that a higher value means longer computation. The reference dictionary has about 290000 words listed. 
@@ -70,7 +70,7 @@ Setting the value to `w_size=290000` is optimal but may take several minutes to 
 'cho-co-mel'
 ```
 
-It should be noted that Weijters algorithm picks any random words to compare against, meaning comparisons with smaller `w_size` are likely to produce
+It should be noted that Weijters algorithm picks any random words to compare against, meaning repeated comparisons with smaller `w_size` are likely to produce
 different results.
 
 ### Performing analyses
