@@ -15,6 +15,11 @@ There are currently three different algorithm that the tool supports:
 | Liang       | Algorithmic   |
 | Weijters    | Lookup-based  |
 
+Syllabificator requires the following libraries to operate:
+* Pandas
+* Numpy
+* Pyphen
+  
 ### Syllabifying words
 
 The most general function syllabifies a string of text into an output with individual syllables. It can be run from the main module,
