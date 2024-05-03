@@ -45,7 +45,7 @@ lower-case letter input, meaning any other input is better suited to use the `hy
 'bar-ra-cu-da'
 ```
 Without any additional parameters, `hyphenate_text` and `hyphenate_word` will automatically employ the optimal algorithm (CRF). 
-Other algorithms can be manually selected by changing the `algo` parameter:
+Other algorithms can be manually selected by changing the `alg` parameter:
 
 ```python
 >>> word = 'chocoladetaart'
