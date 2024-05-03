@@ -84,7 +84,7 @@ Setting the value to `w_size=290000` is optimal but may take several minutes to 
 It should be noted that Weijters algorithm picks any random words to compare against, meaning repeated comparisons with smaller `w_size` are likely to produce
 different results.
 
-### Performing analyses
+## Performing analyses
 
 Syllabificator supports analyses comparing the output of different algorithms versus a correct solution. It displays a number of metrics, e.g., 
 false positives, overall error rate and more. The `run_all` function simply takes an input list of correctly syllabized words (as a pandas series) 
