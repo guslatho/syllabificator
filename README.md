@@ -1,24 +1,26 @@
 # Syllabificator
 
-Library and tool for syllabifying Dutch words and analysing output from different syllabification algorithms.
+Library and tool for syllabifying Dutch words and comparing output from different syllabification algorithms.
 
 ## Usage
 ### General Description
 
 Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
-There are currently three different algorithm that the tool supports:
+There are currently four different algorithm that the tool supports:
 
 | Algorithm   | Type          |
 |-------------|---------------|
 | Brandt      | Linguistic    |
 | Liang       | Algorithmic   |
 | Weijters    | Lookup-based  |
+| CRF         | Conditional Random Field (Linear Chain)  |
 
 Syllabificator requires the following libraries to operate:
 * Pandas
 * Numpy
 * Pyphen
+* Chaine
   
 ### Syllabifying words
 
@@ -42,10 +44,13 @@ lower-case letter input, meaning any other input is better suited to use the `hy
 >>> hyphenate_word(word)
 'bar-ra-cu-da'
 ```
-Without any additional parameters, `hyphenate_text` and `hyphenate_word` will automatically employ the optimal algorithm (Liang). 
+Without any additional parameters, `hyphenate_text` and `hyphenate_word` will automatically employ the optimal algorithm (CRF). 
 Other algorithms can be manually selected by changing the `algo` parameter:
 
 ```python
+>>> word = 'tiramisu'
+>>> hyphenate_word(word, alg='l')
+'ti-ra-mi-su'
 >>> word = 'chocoladetaart'
 >>> hyphenate_word(word, alg='b')
 'cho-co-la-de-taart'
@@ -88,6 +93,8 @@ and applies the different algorithms to them. Output is a table with the differe
 'Please input name of dataset 2 (for display purposes):'
 >>> Liang
 'Please input name of dataset 3 (for display purposes):'
+>>> CRF
+'Please input name of dataset 4 (for display purposes):'
 >>> Weijters
 'Processing...'
 '           TP  FP  TN  FN  owe  swe    %ower   %swer   %oler   %sler'
@@ -95,6 +102,7 @@ and applies the different algorithms to them. Output is a table with the differe
 'NO_HYPHEN   0   0  56  18    9    0  100.000   0.000  24.324   0.000'
 'Brandt     16   2  54   2    2    2   22.222  22.222   5.405   2.703'
 'Liang      18   0  56   0    0    0    0.000   0.000   0.000   0.000'
+'CRF        18   0  56   0    0    0    0.000   0.000   0.000   0.000'
 'Weijters   12  13  43   6    8    7   88.889  77.778  25.676  17.568'
 ```
 The second analyses function `run_sets` performs identically, however takes lists of first a correctly hyphenated
