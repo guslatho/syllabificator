@@ -6,14 +6,17 @@ import re
 
 import algo_brandt
 import algo_liang
+import algo_crf
 import algo_weijters
 import analyze
 
 brandt_hyphen = algo_brandt.brandt_hyphenate
 liang_hyphen = algo_liang.liang_hyphenate
+crf_hyphen = algo_crf.crf_hyphenate
 weijters_hyphen = algo_weijters.weijters_hyphenate
 run_analysis = analyze.analyze_set
 
+    
 # Function for dehyphenating
 def dehyphenate(word):
 
@@ -27,6 +30,7 @@ def run_all(reference_set, print_info=True):
 
     brandt_set = dehyphenated.apply(brandt_hyphen)
     liang_set = dehyphenated.apply(liang_hyphen)
+    crf_set = dehyphenated.apply(crf_hyphen)
     weijters_set = dehyphenated.apply(weijters_hyphen, checks=200)
     # x_set = dehyphenated.apply(algorithm_of_choice) to easily add another algorithm
     # y_set etc.
@@ -34,6 +38,7 @@ def run_all(reference_set, print_info=True):
     output = run_analysis(reference_set,
                           brandt_set,
                           liang_set,
+                          crf_set,
                           weijters_set,
                         # x_set, y_set,
                           print_help=print_info)
@@ -54,13 +59,15 @@ def hyphenate_word(word, alg='l', pattern=4, w_size=2000):
         hyphenated = liang_hyphen(word, library=pattern)
     if alg=='b':
         hyphenated = brandt_hyphen(word)
+    if alg=='c':
+        hyphenated = crf_hyphen(word)
     if alg=='w':
         hyphenated = weijters_hyphen(word, checks=w_size)
 
     return hyphenated
 
 # Hyphenate a document. Numbers are ignored.
-def hyphenate_text(text, alg='l', pattern=4, w_size=2000):
+def hyphenate_text(text, alg='c', pattern=4, w_size=2000):
 
     split_text = re.split(r'(\W|_)', text)
 
@@ -101,8 +108,8 @@ def hyphenate_text(text, alg='l', pattern=4, w_size=2000):
 ht = hyphenate_text
 hw = hyphenate_word
 
-
-    
+print('Syllabificator initialized successfully.')
+print('To syllabify text, use hyphenate_text(\'Een bepaalde tekststring.\')')
 
 
 
