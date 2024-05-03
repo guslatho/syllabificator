@@ -55,10 +55,10 @@ Other algorithms can be manually selected by changing the `algo` parameter:
 The commands for different algorithms are as follows:
 | Algorithm   | Command          |
 |-------------|---------------|
-| Brandt      | alg='b'    |
-| Liang       | alg='l'   |
-| Weijters    | alg='w'  |
-| CRF         | alg='c'  |
+| Brandt      | `alg='b'`    |
+| Liang       | `alg='l'`   |
+| Weijters    | `alg='w'`  |
+| CRF         | `alg='c'`  |
 
 * **!Note!**  Syllabificator employs custom seperator patterns for the Liang algorithm. Pyphen is the current decoder used but it does not support external libraries. 
 As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
