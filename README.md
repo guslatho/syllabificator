@@ -52,7 +52,7 @@ Other algorithms can be manually selected by changing the `algo` parameter:
 >>> hyphenate_word(word, alg='b')
 'cho-co-la-de-taart'
 ```
-The commands for different algorithms are as follows:
+The commands for calling different algorithms are as follows:
 | Algorithm   | Command          |
 |-------------|---------------|
 | Brandt      | `alg='b'`    |
