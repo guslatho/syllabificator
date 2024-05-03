@@ -64,6 +64,8 @@ To call different algorithms, the following commands can be used for the `hyphen
 As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
 native Dutch pattern libraries instead.
 
+### Algorithm specific parameters
+
 Two algorithms have specific parameters that influence their syllabification. For `alg='l'` (which selects liang's algorithm), `pattern=x` 
 where `x` is a value between 1 and 4 selects one of four default libraries. Currently, library 4 is the default.
 
