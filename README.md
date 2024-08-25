@@ -9,12 +9,13 @@ Syllabificator is a tool for syllabifying words, meaning to split **words** into
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
 There are currently four different algorithm that the tool supports:
 
-| Algorithm   | Type          |
-|-------------|---------------|
-| Brandt      | Linguistic    |
-| Liang       | Algorithmic   |
-| Weijters    | Lookup-based  |
-| CRF         | Conditional Random Field (Linear Chain)  |
+| Algorithm   | Type          | Dutch | English |
+|-------------|---------------|-------|---------|
+| Brandt      | Linguistic    | V     | X       |
+| Liang       | Algorithmic   | V     | X       |
+| Weijters    | Lookup-based  | V     | X       |
+| CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
+| NN          | Neural Net    | V     | V       |
 
 Syllabificator requires the following libraries to operate:
 * Pandas
