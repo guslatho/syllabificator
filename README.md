@@ -124,14 +124,17 @@ and applies the different algorithms to them. Output is a table with the differe
 >>> CRF
 'Please input name of dataset 4 (for display purposes):'
 >>> Weijters
+'Please input name of dataset 5 (for display purposes):'
+>>> NN
 'Processing...'
 '           TP  FP  TN  FN  owe  swe    %ower   %swer   %oler   %sler'
-'CORRECT    18   0  56   0    0    0    0.000   0.000   0.000   0.000'
-'NO_HYPHEN   0   0  56  18    9    0  100.000   0.000  24.324   0.000'
-'Brandt     16   2  54   2    2    2   22.222  22.222   5.405   2.703'
-'Liang      18   0  56   0    0    0    0.000   0.000   0.000   0.000'
-'CRF        18   0  56   0    0    0    0.000   0.000   0.000   0.000'
-'Weijters   12  13  43   6    8    7   88.889  77.778  25.676  17.568'
+'CORRECT    98   0  462   0    0    0   0.000   0.000   0.000   0.000'
+'NO_HYPHEN   0   0  462  98   59    0  59.596   0.000  17.500   0.000'
+'Brandt     97   2  460   1    2    2   2.020   2.020   0.536   0.357'
+'Liang      93   9  453   5   10    9  10.101   9.091   2.500   1.607'
+'CRF        97   4  458   1    4    4   4.040   4.040   0.893   0.714'
+'Weijters   63  71  391  35   61   52  61.616  52.525  18.929  12.679'
+'NN         96   3  459   2    3    3   3.030   3.030   0.893   0.536'
 ```
 The second analyses function `run_sets` performs identically, however takes lists of first a correctly hyphenated
 reference set followed by x amounts of lists to check against. All lists are input as a pandas series with equal length:
