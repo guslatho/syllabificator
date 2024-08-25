@@ -29,31 +29,31 @@ Syllabificator requires the following libraries to operate:
 ### Syllabifying words
 
 The most general function syllabifies a string of text into an output with individual syllables. It can be run from the main module,
-`MAIN_execute.py`:
+`main.py`:
 
 ```python
 >>> text = 'De nieuwsgierige man doorzocht de bibliotheek.'
->>> hyphenate_text(text)
+>>> syllabificate_text(text)
 'De nieuws-gie-ri-ge man door-zocht de bi-bli-o-theek.'
 ```
 
-The `hyphenate_text` function supports non-alpha characters, however does not currently take into consideration special characters
+The `syllabificate_text` function supports non-alpha characters, however does not currently take into consideration special characters
 when syllabifying (e.g., `é`)
 
-A more specific function employed by `hyphenate_text` is `hyphenate_word`, which can also be used individually. It only supports
-lower-case letter input, meaning any other input is better suited to use the `hyphenate_text` function.
+A more specific function employed by `syllabificate_text` is `syllabificate_word`, which can also be used individually. It only supports
+lower-case letter input, meaning any other input is better suited to use the `syllabificate_text` function.
 
 ```python
 >>> word = 'barracuda'
->>> hyphenate_word(word)
+>>> syllabificate_word(word)
 'bar-ra-cu-da'
 ```
-Without any additional parameters, `hyphenate_text` and `hyphenate_word` will automatically employ the optimal algorithm (CRF). 
+Without any additional parameters, `syllabificate_text` and `syllabificate_word` will automatically employ the quickest algorithm (CRF). 
 Other algorithms can be manually selected by changing the `alg` parameter:
 
 ```python
 >>> word = 'chocoladetaart'
->>> hyphenate_word(word, alg='b')
+>>> syllabificate_word(word, alg='b')
 'cho-co-la-de-taart'
 ```
 To call different algorithms, the following commands can be used for the `hyphenate_text` and `hyphenate_word` functions:
@@ -63,6 +63,7 @@ To call different algorithms, the following commands can be used for the `hyphen
 | Liang       | `alg='l'`   |
 | Weijters    | `alg='w'`  |
 | CRF         | `alg='c'`  |
+| Neural Net  | `alg='n'`  |
 
 * **!Note!**  Syllabificator employs custom seperator patterns for the Liang algorithm. Pyphen is the current decoder used but it does not support external libraries. 
 As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
