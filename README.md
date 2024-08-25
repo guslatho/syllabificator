@@ -7,15 +7,15 @@ Library and tool for syllabifying Dutch/English words and comparing output from 
 
 Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
-There are currently four different algorithm that the tool supports:
+There are currently five different algorithm that the tool supports:
 
 | Algorithm   | Type          | Dutch | English |
 |-------------|---------------|-------|---------|
-| Brandt      | Linguistic    | V     | X       |
-| Liang       | Algorithmic   | V     | X       |
-| Weijters    | Lookup-based  | V     | X       |
-| CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
-| NN          | Neural Net    | V     | V       |
+| Brandt      | Linguistic    | **V**     | x       |
+| Liang       | Algorithmic   | **V**     | x       |
+| Weijters    | Lookup-based  | **V**     | x       |
+| CRF         | Conditional Random Field (Linear Chain)  | **V**     | **V**       |
+| NN          | Neural Net    | **V**     | **V**       |
 
 Syllabificator requires the following libraries to operate:
 * Pandas
