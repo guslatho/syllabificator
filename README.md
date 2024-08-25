@@ -2,7 +2,7 @@
 
 Library and tool for syllabifying Dutch/English words and comparing output from different syllabification algorithms.
 
-# General
+## General
 ### Description
 
 Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
@@ -31,7 +31,7 @@ models totals about 250 MB in size instead of the ~18MB version included here.
 
 CRF/NN are the recommended algorithms to use.
 
-# Dependencies
+## Dependencies
 ### Running Syllabificator
 
 Syllabificator requires the following libraries to operate:
@@ -42,7 +42,7 @@ Syllabificator requires the following libraries to operate:
 
 CRF only requires Chaine to run, however the Neural Net solution will give better performance and is recommended for documents containing more complex word types.
 
-# Usage
+## Usage
 ### Syllabifying words
 
 The most general function syllabifies a string of text into an output with individual syllables. It can be run from the main module,
