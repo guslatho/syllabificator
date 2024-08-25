@@ -28,6 +28,7 @@ Performance of the algorithms was analyzed on different datasets. Below displaye
 
 It should be noted that the CRF metrics displayed above are for a less optimal but more cost-effective (fewer parameter) approach. The full CRF
 model performs slightly better but totals about 250 MB in size instead of the ~18MB model included here. 
+
 CRF/NN are the recommended algorithms to use as they show the best overall performance.
 
 ## Usage
