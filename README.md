@@ -17,8 +17,8 @@ There are currently five different algorithm that the tool supports:
 | CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
 | NN          | Neural Net    | V     | V       |
 
-Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from dividing based on spelling conventions.
-See [this page](https://forums.steinberg.net/t/hyphen-at-the-border-is-pushed-back/733472/7) for a brief discussion on the differences.
+Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
+See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
 
 Syllabificator requires the following libraries to operate:
 * Pandas
