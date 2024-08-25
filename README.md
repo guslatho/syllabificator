@@ -9,13 +9,13 @@ Syllabificator is a tool for syllabifying words, meaning to split **words** into
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
 There are currently five different algorithm that the tool supports:
 
-| Algorithm   | Type          | Dutch | English |
-|-------------|---------------|-------|---------|
-| Brandt      | Linguistic    | V     | x       |
-| Liang       | Algorithmic   | V     | x       |
-| Weijters    | Lookup-based  | V     | x       |
-| CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
-| NN          | Deep learning (Neural Net)    | V     | V       |
+| Algorithm   | Type          | Dutch | English | Origin |
+|-------------|---------------|-------|---------|--------|
+| Brandt      | Linguistic    | V     | x       | Brandt Corstius, H. (1970). Exercises in computational linguistics |
+| Liang       | Algorithmic   | V     | x       | Liang, F. M. (1983). Word hy-phen-a-tion by com-put-er |
+| Weijters    | Lookup-based  | V     | x       | Weijters, A. J. M. M. (1991). A SIMPLE LOOK-UP PROCEDURE SUPERIOR TO NETTALK? |
+| CRF         | Conditional Random Field (Linear Chain)  | V     | V       |  Trogkanis, N., & Elkan, C. (2010). Conditional random fields for word hyphenation |
+| NN          | Deep learning (Neural Net)    | V     | V       | (Newly added) |
 
 * **!Note!** Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
 See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
