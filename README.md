@@ -22,9 +22,14 @@ See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is
 
 ### Algorithm Performance
 
-Performance of the algorithms was tested on three datasets to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm:
+Performance of the algorithms was tested on three datasets to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm for Dutch:
 
 ![performance_comparison](https://github.com/user-attachments/assets/904c47ff-ebf8-4e47-b673-480449a8bf32)
+
+| Algorithm   | Word Error Rate % |
+|-------------|-------------------|
+| CRF         | 95.75%            |
+| NN          | 98.79%            |
 
 It should be noted that the CRF model used here is a slightly less optimal but more cost-effective (fewer parameter) implementation. The full-parameter CRF
 models totals about 250 MB in size instead of the ~18MB version included here. 
