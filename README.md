@@ -26,10 +26,10 @@ Performance of the algorithms was tested on three datasets to evaluate algorithm
 
 ![performance_comparison](https://github.com/user-attachments/assets/904c47ff-ebf8-4e47-b673-480449a8bf32)
 
-It should be noted that the CRF metrics displayed above are for a less optimal but more cost-effective (fewer parameter) approach. The full CRF
-model performs slightly better but totals about 250 MB in size instead of the ~18MB model included here. 
+It should be noted that the CRF model used here is a slightly less optimal but more cost-effective (fewer parameter) implementation. The full-parameter CRF
+models totals about 250 MB in size instead of the ~18MB version included here. 
 
-CRF/NN are the recommended algorithms to use as they show the best overall performance. 
+CRF/NN are the recommended algorithms to use.
 
 ## Usage
 ### Running Syllabificator
@@ -40,7 +40,7 @@ Syllabificator requires the following libraries to operate:
 * Chaine
 * Python 3.11 environment for the Neural Net (see end of page for instructions).
 
-CRF only requires Chaine to run, however the Neural Net solution will give better performance especially on sets containing complex words.
+CRF only requires Chaine to run, however the Neural Net solution will give better performance and is recommended for documents containing more complex word types.
   
 ### Syllabifying words
 
