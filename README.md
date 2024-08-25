@@ -17,7 +17,7 @@ There are currently five different algorithm that the tool supports:
 | CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
 | NN          | Deep learning (Neural Net)    | V     | V       |
 
-Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
+* **!Note!** Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
 See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
 
 ### Algorithm Performance
@@ -39,6 +39,8 @@ Syllabificator requires the following libraries to operate:
 * Numpy
 * Pyphen
 * Chaine
+
+* **!Note!** To use the Neural Net solution, view the instructions at the end to replicate the environment
   
 ### Syllabifying words
 
@@ -154,3 +156,17 @@ as `sample_script.py` in the main directory
 ### Misc
 
 Syllabificator is newly employed and not yet test-proof
+
+### Virtual Environment Instructions for Neural Net
+
+The deep learning model was created using a custom CRF addon only compatible with an older version of Tensorflow. To run it, create a
+new virtual environments with the following packages:
+
+* Create a new environment with 'python=3.11'
+* Install 'numpy-1.24.3' and 'pandas-2.2.2'
+* Install 'tensorflow-2.13.0'
+* 
+
+
+
+
