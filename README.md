@@ -1,6 +1,6 @@
 # Syllabificator
 
-Library and tool for syllabifying Dutch words and comparing output from different syllabification algorithms.
+Library and tool for syllabifying Dutch/English words and comparing output from different syllabification algorithms.
 
 ## Usage
 ### General Description
