@@ -28,8 +28,8 @@ Performance of the algorithms was tested on three datasets to evaluate algorithm
 
 | Algorithm   | Word Error Rate % |
 |-------------|-------------------|
-| CRF         | 95.75%            |
-| NN          | 98.79%            |
+| CRF         | 4.25%            |
+| NN          | 1.21%            |
 
 It should be noted that the CRF model used here is a slightly less optimal but more cost-effective (fewer parameter) implementation. The full-parameter CRF
 models totals about 250 MB in size instead of the ~18MB version included here. 
