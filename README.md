@@ -27,7 +27,7 @@ Performance of the algorithms was analyzed on different datasets. Below displaye
 ![performance_comparison](https://github.com/user-attachments/assets/904c47ff-ebf8-4e47-b673-480449a8bf32)
 
 It should be noted that the CRF metrics displayed above are for a less optimal but more cost-effective (fewer parameter) approach. The full CRF
-model performs slightly better but totals about 250 MB in size, as such a smaller (18mb) model was included here. 
+model performs slightly better but totals about 250 MB in size instead of the ~18MB model included here.
 
 ## Usage
 ### Running Syllabificator
