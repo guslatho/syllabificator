@@ -31,7 +31,7 @@ models totals about 250 MB in size instead of the ~18MB version included here.
 
 CRF/NN are the recommended algorithms to use.
 
-## Usage
+## Dependencies
 ### Running Syllabificator
 
 Syllabificator requires the following libraries to operate:
@@ -41,7 +41,8 @@ Syllabificator requires the following libraries to operate:
 * Python 3.11 environment for the Neural Net (see end of page for instructions).
 
 CRF only requires Chaine to run, however the Neural Net solution will give better performance and is recommended for documents containing more complex word types.
-  
+
+## Usage
 ### Syllabifying words
 
 The most general function syllabifies a string of text into an output with individual syllables. It can be run from the main module,
