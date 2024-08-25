@@ -15,7 +15,7 @@ There are currently five different algorithm that the tool supports:
 | Liang       | Algorithmic   | V     | x       |
 | Weijters    | Lookup-based  | V     | x       |
 | CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
-| NN          | Neural Net    | V     | V       |
+| NN          | Deep learning neural net    | V     | V       |
 
 Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
 See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
