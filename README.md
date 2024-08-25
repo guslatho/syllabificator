@@ -113,7 +113,7 @@ false positives, overall error rate and more. The `run_all` function simply take
 and applies the different algorithms to them. Output is a table with the different relevant metrics.
 
 ```python
->>> sample_set = pd.read_csv('set_loan_hyphenated_sample.csv', header=None)  # .csv containing hyphenated words seperate by break
+>>> sample_set = pd.read_csv('set_loan_hyphenated.csv', header=None)  # .csv containing hyphenated words seperate by break
 >>> sample_set = sample_set[0]  # Cast as series
 >>> Me.run_all(sample_set, print_info=True)
 'Please input name of dataset 1 (for display purposes):'
