@@ -162,9 +162,9 @@ Syllabificator is newly employed and not yet test-proof
 The deep learning model was created using a custom CRF addon only compatible with an older version of Tensorflow. To run it, create a
 new virtual environments with the following packages:
 
-* Create a new environment with 'python=3.11'
-* Install 'numpy-1.24.3' and 'pandas-2.2.2'
-* Install 'tensorflow-2.13.0'
+* Create a new environment with `python=3.11`
+* Install `numpy-1.24.3` and `pandas-2.2.2`
+* Install `tensorflow-2.13.0`
 * 
 
 
