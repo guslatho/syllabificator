@@ -22,7 +22,7 @@ See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is
 
 ### Algorithm Performance
 
-Performance of the algorithms was analyzed on different datasets. Below displayed are the word error rate for each set for each algorithm:
+Performance of the algorithms was tested on three datasets to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm:
 
 ![performance_comparison](https://github.com/user-attachments/assets/904c47ff-ebf8-4e47-b673-480449a8bf32)
 
