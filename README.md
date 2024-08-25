@@ -11,11 +11,14 @@ There are currently five different algorithm that the tool supports:
 
 | Algorithm   | Type          | Dutch | English |
 |-------------|---------------|-------|---------|
-| Brandt      | Linguistic    | **V**     | x       |
-| Liang       | Algorithmic   | **V**     | x       |
-| Weijters    | Lookup-based  | **V**     | x       |
-| CRF         | Conditional Random Field (Linear Chain)  | **V**     | **V**       |
-| NN          | Neural Net    | **V**     | **V**       |
+| Brandt      | Linguistic    | V     | x       |
+| Liang       | Algorithmic   | V     | x       |
+| Weijters    | Lookup-based  | V     | x       |
+| CRF         | Conditional Random Field (Linear Chain)  | V     | V       |
+| NN          | Neural Net    | V     | V       |
+
+Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from dividing based on spelling conventions.
+See [this page](https://forums.steinberg.net/t/hyphen-at-the-border-is-pushed-back/733472/7) for a brief discussion on the differences.
 
 Syllabificator requires the following libraries to operate:
 * Pandas
