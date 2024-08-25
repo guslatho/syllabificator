@@ -2,8 +2,8 @@
 
 Library and tool for syllabifying Dutch/English words and comparing output from different syllabification algorithms.
 
-## Usage
-### General Description
+## General
+### Description
 
 Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
@@ -19,6 +19,18 @@ There are currently five different algorithm that the tool supports:
 
 Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
 See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
+
+### Algorithm Performance
+
+Performance of the algorithms was analyzed on different datasets. Below displayed are the word error rate for each set for each algorithm:
+
+![performance_comparison](https://github.com/user-attachments/assets/904c47ff-ebf8-4e47-b673-480449a8bf32)
+
+It should be noted that the CRF metrics displayed above are for a less optimal but more cost-effective (fewer parameter) approach. The full CRF
+model performs slightly better but totals about 250 MB in size, as such a smaller (18mb) model was included here. 
+
+## Usage
+### Running Syllabificator
 
 Syllabificator requires the following libraries to operate:
 * Pandas
