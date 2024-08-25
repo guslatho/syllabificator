@@ -29,7 +29,7 @@ Performance of the algorithms was analyzed on different datasets. Below displaye
 It should be noted that the CRF metrics displayed above are for a less optimal but more cost-effective (fewer parameter) approach. The full CRF
 model performs slightly better but totals about 250 MB in size instead of the ~18MB model included here. 
 
-CRF/NN are the recommended algorithms to use as they show the best overall performance.
+CRF/NN are the recommended algorithms to use as they show the best overall performance. 
 
 ## Usage
 ### Running Syllabificator
@@ -37,10 +37,10 @@ CRF/NN are the recommended algorithms to use as they show the best overall perfo
 Syllabificator requires the following libraries to operate:
 * Pandas
 * Numpy
-* Pyphen
 * Chaine
+* Python 3.11 environment for the Neural Net (see end of page for instructions).
 
-* **!Note!** To use the Neural Net solution, view the instructions at the end to replicate the environment
+CRF only requires Chaine to run, however the Neural Net solution will give better performance especially on sets containing complex words.
   
 ### Syllabifying words
 
@@ -54,7 +54,7 @@ The most general function syllabifies a string of text into an output with indiv
 ```
 
 The `syllabificate_text` function supports non-alpha characters, however does not currently take into consideration special characters
-when syllabifying (e.g., `é`)
+when syllabifying (e.g., `é`).
 
 A more specific function employed by `syllabificate_text` is `syllabificate_word`, which can also be used individually. It only supports
 lower-case letter input, meaning any other input is better suited to use the `syllabificate_text` function.
@@ -165,7 +165,6 @@ new virtual environments with the following packages installed:
 * Create a new environment with `python=3.11`
 * Install `numpy==1.24.3` and `pandas==2.2.2`
 * Install `tensorflow==2.13.0`
-* Install `tensorflow-addons==0.22.0`
 * Install `tensorflow-addons==0.22.0`
 * Install `keras_crf==0.3.0`
 * Install `chaine==3.12.1`
