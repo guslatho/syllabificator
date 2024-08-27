@@ -1,16 +1,15 @@
 # Syllabificator
 
-Library and tool for syllabifying Dutch/English words and comparing output from different syllabification algorithms.
-
 ## General
 ### Description
 
-Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. G
+Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). The project aims to offer easy access to high-quality syllabification algorithms. Included in Syllabificator are multiple algorithms, two of which match the best performance described in the literature:
+
+* **Conditional Random Field**. Based on the 2010 paper by Trogkanis and Elkan, the current implementation is replicated using Chaine (CRF package for Python). Trogkanis and Elkan report a word accuracy of 99.51% for Dutch dictionary words and 96.33% for English dictionary words, current replication scores 99.45% for Dutch dictionary words.
+* **Neural Net model**. A novel approach that uses deep learning to analyze subword patterns (presented at CLIN 34). Comparisons shows improvements in comparison with the CRF model, especially on complex word forms (peak accuracy of 99.57% on Dutch dictionary words).
 
 ### Algorithms
-Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
-by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
-There are currently five different algorithm that the tool supports:
+In total, five algorithms are included:
 
 | Algorithm   | Type          | Dutch | English | Origin |
 |-------------|---------------|-------|---------|--------|
@@ -33,11 +32,8 @@ For English, final model performance for a large train split (99.5%) is as follo
 
 | Algorithm   | Word Error Rate % |
 |-------------|-------------------|
-| CRF         | 4.25%            |
+| CRF         | 3.64%            |
 | NN          | 1.21%            |
-
-It should be noted that the CRF model used here is a slightly less optimal but more cost-effective (fewer parameter) implementation. The full-parameter CRF
-models totals about 250 MB in size instead of the ~18MB version included here. 
 
 CRF/NN are the recommended algorithms to use.
 
@@ -185,6 +181,12 @@ Alternatively, the recreate the environment in full from scratch, the following 
 * Install `keras_crf==0.3.0`
 * Install `chaine==3.12.1`
 
+### To-do
 
+| Done   | Description |
+|-------------|-------------------|
+| [ ] | Add hyphenation (syllable dividing according to grammar rules |
+| [ ] | Hyperparameter tuning for english NN |
+| [ ] | Fix NN processing from individual word to batch (increase computation speed) |
 
 
