@@ -185,7 +185,7 @@ Alternatively, the recreate the environment in full from scratch, the following 
 
 | Done   | Description |
 |-------------|-------------------|
-|  | Add hyphenation (syllable dividing according to grammar rules |
+|  | Add hyphenation support (syllable dividing according to grammar rules) |
 |  | Hyperparameter tuning for english NN |
 |  | Fix NN processing from individual word to batch (increase computation speed) |
 
