@@ -170,8 +170,10 @@ Syllabificator is newly employed and not yet test-proof
 
 ### Virtual Environment Instructions for Neural Net
 
-The deep learning model was created using a custom CRF addon only compatible with an older version of Tensorflow. To run it, create a
-new virtual environments with the following packages installed:
+The deep learning model was created using a custom CRF addon only compatible with an older version of Tensorflow. To run it, the requirements.txt
+file can be used to recreate the original environment (note that it requires a Python==3.11 environment).
+
+Alternatively, the recreate the environment in full from scratch, the following steps can be performed manually:
 
 * Create a new environment with `python=3.11`
 * Install `numpy==1.24.3` and `pandas==2.2.2`
