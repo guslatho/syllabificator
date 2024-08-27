@@ -80,9 +80,9 @@ Other algorithms can be manually selected by changing the `alg` parameter:
 To call different algorithms, the following commands can be used for the `hyphenate_text` and `hyphenate_word` functions:
 | Algorithm   | Command          | Note |
 |-------------|---------------|--------|
-| Brandt      | `alg='b'`    | (Not available for English |
-| Liang       | `alg='l'`   | (Not available for English |
-| Weijters    | `alg='w'`  | (Not available for English |
+| Brandt      | `alg='b'`    | (Not available for English) |
+| Liang       | `alg='l'`   | (Not available for English) |
+| Weijters    | `alg='w'`  | (Not available for English) |
 | CRF         | `alg='c'`  | |
 | Neural Net  | `alg='n'`  | |
 
@@ -186,6 +186,6 @@ Alternatively, the recreate the environment in full from scratch, the following 
 |  | Add hyphenation support (syllable dividing according to grammar rules) |
 |  | Hyperparameter tuning for english NN |
 |  | Fix NN processing from individual word to batch (increase computation speed) |
-|  | Add Liang's algorithm for English |
+|  | Add Liang/Weijter's algorithm for English |
 
 
