@@ -28,14 +28,12 @@ For Dutch, performance of the algorithms was tested on three datasets to evaluat
 
 ![performance_comparison](https://github.com/user-attachments/assets/ae5ef9e5-7be5-4f34-a305-c691a4f3db2c)
 
-For English, final model performance for a large train split (99.5%) is as follows:
+For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 
 | Algorithm   | Word Error Rate % |
 |-------------|-------------------|
 | CRF         | 3.64%            |
 | NN          | 1.21%            |
-
-CRF/NN are the recommended algorithms to use.
 
 ## Dependencies
 ### Running Syllabificator
@@ -44,9 +42,9 @@ Syllabificator requires the following libraries to operate:
 * Pandas
 * Numpy
 * Chaine
-* Python 3.11 environment for the Neural Net (see end of page for instructions).
+* Python 3.11 environment with tensorflow 2.13 for the Neural Net (see end of page for instructions).
 
-CRF only requires Chaine to run, however the Neural Net solution will give better performance and is recommended for documents containing more complex word types.
+The Neural Net solution gives the best performance and is recommended for documents containing more complex word types.
 
 ## Usage
 ### Syllabifying words
