@@ -5,6 +5,9 @@ Library and tool for syllabifying Dutch/English words and comparing output from 
 ## General
 ### Description
 
+Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. G
+
+### Algorithms
 Syllabificator is a tool for syllabifying words, meaning to split **words** into **pho-ne-tic** **com-pli-ant** **syl-la-bles**. It works
 by directly employing algorithms from external libraries (like Pyphen) supplemented with implementations of algorithms manually coded.
 There are currently five different algorithm that the tool supports:
