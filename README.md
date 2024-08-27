@@ -187,5 +187,6 @@ Alternatively, the recreate the environment in full from scratch, the following 
 |  | Hyperparameter tuning for english NN |
 |  | Fix NN processing from individual word to batch (increase computation speed) |
 |  | Add Liang/Weijter's algorithm for English |
+|  | Add syllable counting |
 
 
