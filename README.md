@@ -78,13 +78,13 @@ Other algorithms can be manually selected by changing the `alg` parameter:
 'cho-co-la-de-taart'
 ```
 To call different algorithms, the following commands can be used for the `hyphenate_text` and `hyphenate_word` functions:
-| Algorithm   | Command          |
-|-------------|---------------|
-| Brandt      | `alg='b'`    |
-| Liang       | `alg='l'`   |
-| Weijters    | `alg='w'`  |
-| CRF         | `alg='c'`  |
-| Neural Net  | `alg='n'`  |
+| Algorithm   | Command          | Note |
+|-------------|---------------|--------|
+| Brandt      | `alg='b'`    | (Not available for English |
+| Liang       | `alg='l'`   | (Not available for English |
+| Weijters    | `alg='w'`  | (Not available for English |
+| CRF         | `alg='c'`  | |
+| Neural Net  | `alg='n'`  | |
 
 * **!Note!**  Syllabificator employs custom seperator patterns for the Liang algorithm. Pyphen is the current decoder used but it does not support external libraries. 
 As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
@@ -186,5 +186,6 @@ Alternatively, the recreate the environment in full from scratch, the following 
 |  | Add hyphenation support (syllable dividing according to grammar rules) |
 |  | Hyperparameter tuning for english NN |
 |  | Fix NN processing from individual word to batch (increase computation speed) |
+|  | Add Liang's algorithm for English |
 
 
