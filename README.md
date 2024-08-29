@@ -39,15 +39,15 @@ For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 For both English and Dutch, NN/CRF are the recommended algorithms to use.
 
 # Usage
-## Running Syllabificator
+## Requirements.
 
-Syllabificator requires the following libraries:
+Syllabificator requires the following dependencies:
 * Pandas
 * Numpy
 * Chaine
 * Python 3.11 environment with tensorflow 2.13 for the Neural Net.
 
-Use the requirements.txt to copy the original environment (see end of page).
+Use the requirements.txt to copy the original virtual environment (see end of page).
 
 ## Syllabifying words
 
