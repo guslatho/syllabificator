@@ -225,5 +225,5 @@ on output for 13 words:
 2323      bril-len-glaas-jes     bril-len-g-laas-jes      bril-len-glaas-jes
 ```
 
-Note that NN had the highest success rate in this instance, followed by CRF (NN syllabificated 2 words correctly that CRF didn't) and Liang.
+Note that NN had the highest success rate in this instance, followed by CRF and Liang.
 
