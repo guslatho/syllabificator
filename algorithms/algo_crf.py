@@ -1,3 +1,7 @@
+# Python implementation using Chaine of a model put forth in Trogkanis, N., & Elkan, C. (2010). Conditional random 
+# fields for word hyphenation. In J. Hajič, S. Carberry, S. Clark, & J. Nivre (Eds.), Proceedings of the 48th Annual 
+# Meeting of the Association for Computational Linguistics (pp. 366–374). Association for Computational Linguistics.
+
 import os
 import chaine
 from chaine import Model
