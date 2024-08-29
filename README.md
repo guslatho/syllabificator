@@ -40,7 +40,7 @@ See end of page for short performance comparison applied to an actual document.
 
 # Usage
 
-Syllabificator can be ran in two quick steps
+Quick installation instructions:
 * Create new environment with python 3.11
 * Install requirements.txt
 
