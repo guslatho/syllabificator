@@ -101,28 +101,7 @@ To call different algorithms, the following commands can be used for the `hyphen
 | Neural Net  | `alg='n'`  | |
 
 
-
-### Algorithm specific parameters
-
-Two algorithms have specific parameters that influence their syllabification. For `alg='l'` (which selects liang's algorithm), `pattern=x` 
-where `x` is a value between 1 and 4 selects one of four default libraries. Currently, library 4 is the default.
-
-For `alg='w'`, the number of comparisons with other words from the dictionary can be specified through `w_size=x`. If left empty, it will automatically 
-select 2000 words to compare against. Note that a higher value means longer computation. The reference dictionary has about 290000 words listed. 
-Setting the value to `w_size=290000` is optimal but may take several minutes to compute.
-
-```python
->>> word = 'chocomel'
->>> hyphenate_word(word, alg='w', w_size=200)
-'cho-co-me-l'
->>> hyphenate_word(word, alg='w', w_size=20000)
-'cho-co-mel'
-```
-
-It should be noted that Weijters algorithm picks any random words to compare against, meaning repeated comparisons with smaller `w_size` are likely to produce
-different results.
-
-## Performing analyses
+## Performing Analyses
 
 Syllabificator supports analyses comparing the output of different algorithms versus a correct solution. It displays a number of metrics, e.g., 
 false positives, overall error rate and more. The `run_all` function simply takes an input list of correctly syllabized words (as a pandas series) 
@@ -173,11 +152,7 @@ reference set followed by x amounts of lists to check against. All lists are inp
 The default directory contains a sample script executing the above functions on different sample libraries. It is listed
 as `sample_script.py` in the main directory
 
-### Misc
-
-Syllabificator is newly employed and not yet test-proof
-
-### Virtual Environment Instructions for Neural Net
+## Misc
 
 The deep learning model was created using a custom CRF addon only compatible with an older version of Tensorflow. To run it, the requirements.txt
 file can be used to recreate the original environment (note that it requires a Python==3.11 environment).
