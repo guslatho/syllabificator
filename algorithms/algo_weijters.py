@@ -1,3 +1,6 @@
+# Implementation of look-up model mentioned in Weijters, A. (1991). A simple look-up procedure superior to NETtalk? In Proceedings
+# of the International Conference on Articial Neural Networks, Espoo, Finland.
+
 import pandas as pd
 import numpy as np
 import time
