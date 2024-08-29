@@ -23,7 +23,7 @@ Below table displays all five models which can be run:
 * Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
 See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion.
 
-### Algorithm Performance
+## Algorithm Performance
 
 For Dutch, performance of the algorithms was tested on three datasets ([CELEX](https://catalog.ldc.upenn.edu/LDC96L14), loan words derived from [de Sijs](https://www.dbnl.org/tekst/sijs002groo01_01/), pseudowords derived from [CHOREC](https://taalmaterialen.ivdnt.org/download/tstc-chorec-spraakcorpus/)) to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm:
 
@@ -36,19 +36,20 @@ For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 | CRF         | 3.64%            |
 | NN          | 1.21%            |
 
-## Dependencies
-### Running Syllabificator
+For both English and Dutch, NN/CRF are the recommended algorithms to use.
 
-Syllabificator requires the following libraries to operate:
+# Usage
+## Running Syllabificator
+
+Syllabificator requires the following libraries:
 * Pandas
 * Numpy
 * Chaine
-* Python 3.11 environment with tensorflow 2.13 for the Neural Net (see end of page for instructions).
+* Python 3.11 environment with tensorflow 2.13 for the Neural Net.
 
-The Neural Net solution gives the best performance and is recommended for documents containing more complex word types.
+Use the requirements.txt to copy the original environment (see end of page).
 
-## Usage
-### Syllabifying words
+## Syllabifying words
 
 The most general function syllabifies a string of text into an output with individual syllables. It can be run from the main module,
 `main.py`:
