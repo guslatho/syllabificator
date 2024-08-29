@@ -1,15 +1,15 @@
 # Syllabificator
 
-Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). 
+Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). It includes recent high-quality syllabification algorithms for Dutch and English.
 
 ## Description
 
-Syllabificator  offer easy access to high-quality syllabification algorithms for Dutch and English. Two algorithms which match the best performance described in the literature are included:
+Two algorithms which match the best performance described in the literature are included:
 
 * **Conditional Random Field**. A 2010 model by Trogkanis and Elkan, replicated using Chaine (CRF package for Python). Trogkanis and Elkan report a word accuracy of 99.51% for Dutch dictionary words and 96.33% for English dictionary words, current replication scores 99.45% for Dutch dictionary words.
 * **Neural Net model**. A new approach that uses deep learning to analyze subword patterns (presented at CLIN 34). Comparisons shows improvements in comparison with the CRF model, especially on complex word forms (peak recorded accuracy of 99.57% on Dutch dictionary words).
 
-## Algorithms
+## Algorithm Overview
 In total, five algorithms are included:
 
 | Algorithm   | Type          | Dutch | English | Origin |
