@@ -85,9 +85,11 @@ To syllabify English words, use the language='eng' parameter:
 >>> word = 'halloween'
 >>> syllabificate_word(word, language='eng')
 'cho-co-la-de-taart'
+```
+```python
 >>> word = 'jellybean'
->>> syllabificate_word(word, alg='b', language='eng')
-'cho-co-la-de-taart'
+>>> syllabificate_word(word, alg='n', language='eng')
+'jel-ly-bean'
 ```
 
 To call different algorithms, the following commands can be used for the `hyphenate_text` and `hyphenate_word` functions:
