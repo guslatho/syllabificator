@@ -1,7 +1,6 @@
 # Syllabificator
 
-Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). It features recent high-quality syllabification algorithms for Dutch and English that are easy to apply via
-minimal command line interactions.
+Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). The project aims to offer easy access to high-quality syllabification algorithms for Dutch and English.
 
 ## Description
 
