@@ -10,7 +10,7 @@ Two algorithms which match the best performance described in the literature are 
 * **Neural Net model**. A new approach that uses deep learning to analyze subword patterns (presented at CLIN 34). Comparisons shows improvements in comparison with the CRF model, especially on complex word forms (peak recorded accuracy of 99.57% on Dutch dictionary words).
 
 ## Algorithm Overview
-In total, five algorithms are included:
+Below table describes all five models which can be run:
 
 | Algorithm   | Type          | Dutch | English | Origin |
 |-------------|---------------|-------|---------|--------|
