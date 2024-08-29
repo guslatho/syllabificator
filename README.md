@@ -178,7 +178,7 @@ Alternatively, the recreate the environment in full from scratch, the following 
 ### Sample Benchmark: First chapter of Harry Potter
 
 Below is a comparison of outputs of the 3 best-performing algorithms (Liang, CRF, Neural). Applied to the first chapter of Harry Potter, they only differed
-on output for 13 words:
+on output for 13 words out of +- 2375:
 
 ```python
                          CRF                   LIANG                      NN
