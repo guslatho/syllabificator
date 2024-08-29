@@ -203,4 +203,27 @@ Alternatively, the recreate the environment in full from scratch, the following 
 |  | Add syllable counting |
 |  | Add support for NN for words longer than 34 character (Dutch) / 22 characters (English) |
 
+### Sample Benchmark: First chapter of Harry Potter
+
+Below is a comparison of outputs of the 3 best-performing algorithms (Liang, CRF, Neural). Applied to the first chapter of Harry Potter, they only differed
+on output for 13 words:
+
+```python
+                         CRF                   LIANG                      NN
+207   on-Duf-fe-ling-ach-tig  on-Duf-fel-ing-ach-tig  on-Duf-fe-ling-ach-tig
+600                   fi-le,                  fi-le,                   file,
+658                  zoot-je               zo-o-t-je                 zoot-je
+965                   do-nut                  don-ut                  do-nut
+1300                 blij-e,                  blije,                 blij-e,
+1301                  blij-e                   blije                  blij-e
+1441              ‘Ks-ssjt!’              ‘Kss-sjt!’               ‘Ksssjt!’
+1575                mee-stal                meest-al                meest-al
+1607          slaap-pa-troon         sla-ap-pa-troon          slaap-pa-troon
+1720                   lui-e                    luie                   lui-e
+1766             Pe-tu-ni-a,              Pe-tu-nia,             Pe-tu-ni-a,
+2118              Pe-tu-ni-a               Pe-tu-nia              Pe-tu-ni-a
+2323      bril-len-glaas-jes     bril-len-g-laas-jes      bril-len-glaas-jes
+```
+
+Note that NN had the highest success rate in this instance, followed by CRF (NN caught 2 words correctly that CRF didn't, 'file' and ‘Ksssjt!’) and Liang 
 
