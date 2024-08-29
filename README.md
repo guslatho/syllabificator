@@ -227,3 +227,35 @@ on output for 13 words:
 
 Note that NN had the highest success rate in this instance, followed by CRF and Liang.
 
+For the English language, output on English first chapter is as follows:
+
+```python
+                  CRF               NN
+117           Dud-ley          Du-dley
+202   un-Durs-ley-ish  un-Dur-sley-ish
+536         coul-dn’t         couldn’t
+683           cou-ple          coup-le
+1118         Ha-rold.         Har-old.
+1261      pas-sers-by      pass-ers-by
+1442      be-hav-ior?     be-hav-i-or?
+1600       Mc-Guf-fin        McGuf-fin
+1901        Dud-ley’s        Du-dley’s
+2590  Mc-Gon-a-gall.”  McG-on-a-gall.”
+2691   Mc-Gon-a-gall.   McG-on-a-gall.
+2714    Mc-Gon-a-gall    McG-on-a-gall
+3064   Mc-Gon-a-gall,   McG-on-a-gall,
+3350  Mc-Gon-a-gall’s  McG-on-a-gall’s
+3373       coul-dn’t.        couldn’t.
+3551       “Ha-grid’s       “Hag-rid’s
+3890          Ha-grid          Hag-rid
+4083       “Ha-grid,”       “Hag-rid,”
+4114          Sir-ius         Sir-i-us
+4221       “Coul-dn’t        “Couldn’t
+4292         Ha-grid.         Hag-rid.
+4334         Ha-grid,         Hag-rid,
+4443          min-ute          mi-nute
+4455        Ha-grid’s        Hag-rid’s
+4542             rose            ro-se
+4559  Mc-Gon-a-gall,”  McG-on-a-gall,”
+4778         Dud-ley.         Du-dley.
+```
