@@ -35,6 +35,7 @@ For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 |-------------|-------------------|
 | CRF         | 3.64%            |
 | NN          | 1.21%            |
+
 For both English and Dutch, NN/CRF are the recommended algorithms to use.
 
 # Usage
