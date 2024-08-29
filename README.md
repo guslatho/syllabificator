@@ -39,7 +39,6 @@ For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 See end of page for short performance comparison applied to an actual document.
 
 # Usage
-## Requirements
 
 Syllabificator requires the following dependencies:
 * Pandas
@@ -82,9 +81,9 @@ Other algorithms can be manually selected by changing the `alg` parameter:
 To syllabify English words, use the language='eng' parameter:
 
 ```python
->>> word = 'halloween'
+>>> word = 'christmas'
 >>> syllabificate_word(word, language='eng')
-'cho-co-la-de-taart'
+'christ-mas'
 ```
 ```python
 >>> word = 'jellybean'
