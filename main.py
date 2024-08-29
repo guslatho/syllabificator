@@ -80,14 +80,14 @@ def syllabificate_word(word, alg='c', pattern=2, w_size=20, language='nl'):
     if alg=='w':
         hyphenated = weijters_syl(word, checks=w_size)
     if alg=='n':
-        if language=='nl' and len(word)<34:
+        if language=='nl' and len(word)<35:
             hyphenated = nn_syl(word)
-        elif language=='nl' and len(word)>=34:
+        elif language=='nl' and len(word)>=35:
             hyphenated = crf_syl(word)
             print('Word with length>34 detected, replacing with CRF')
-        if language=='eng' and len(word)<22:
+        if language=='eng' and len(word)<23:
             hyphenated = nn_syl_eng(word)
-        elif language=='eng' and len(word)>=22:
+        elif language=='eng' and len(word)>=23:
             hyphenated = crf_syl(word, language)
             print('Word with length>22 detected, replacing with CRF')
 
