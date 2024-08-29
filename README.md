@@ -39,7 +39,7 @@ For English, the recorded word error rates on a 99.5/0.5% split are as follows:
 For both English and Dutch, NN/CRF are the recommended algorithms to use.
 
 # Usage
-## Requirements.
+## Requirements
 
 Syllabificator requires the following dependencies:
 * Pandas
@@ -79,6 +79,17 @@ Other algorithms can be manually selected by changing the `alg` parameter:
 >>> syllabificate_word(word, alg='b')
 'cho-co-la-de-taart'
 ```
+To syllabify English words, use the language='eng' parameter:
+
+```python
+>>> word = 'halloween'
+>>> syllabificate_word(word, language='eng')
+'cho-co-la-de-taart'
+>>> word = 'jellybean'
+>>> syllabificate_word(word, alg='b', language='eng')
+'cho-co-la-de-taart'
+```
+
 To call different algorithms, the following commands can be used for the `hyphenate_text` and `hyphenate_word` functions:
 | Algorithm   | Command          | Note |
 |-------------|---------------|--------|
@@ -88,9 +99,7 @@ To call different algorithms, the following commands can be used for the `hyphen
 | CRF         | `alg='c'`  | |
 | Neural Net  | `alg='n'`  | |
 
-* **!Note!**  Syllabificator employs custom seperator patterns for the Liang algorithm. Pyphen is the current decoder used but it does not support external libraries. 
-As a work-around, the file `dutch_cus_twee.dic` can be placed in the pyphen library index. If it is not present Pyphen will still work but default to the 
-native Dutch pattern libraries instead.
+
 
 ### Algorithm specific parameters
 
@@ -190,5 +199,6 @@ Alternatively, the recreate the environment in full from scratch, the following 
 |  | Fix NN processing from individual word to batch (increase computation speed) |
 |  | Add Liang/Weijter's algorithm for English |
 |  | Add syllable counting |
+|  | Add support for NN for words longer than 34 character (Dutch) / 22 characters (English) |
 
 
