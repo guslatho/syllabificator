@@ -76,7 +76,7 @@ Other algorithms can be manually selected by changing the `alg` parameter:
 >>> syllabificate_word(word, alg='b')
 'cho-co-la-de-taart'
 ```
-To syllabify English words, use the language='eng' parameter:
+To syllabify English words, use the `language='eng'` parameter:
 
 ```python
 >>> word = 'christmas'
