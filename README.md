@@ -10,7 +10,7 @@ Two algorithms which match the best performance described in the literature are 
 * **Neural Net model**. A new approach that uses deep learning to analyze subword patterns (presented at CLIN 34). Comparisons shows improvements in comparison with the CRF model, especially on complex word forms (peak recorded accuracy of 99.57% on Dutch dictionary words).
 
 ## Algorithm Overview
-Below table describes all five models which can be run:
+Below table displays all five models which can be run:
 
 | Algorithm   | Type          | Dutch | English | Origin |
 |-------------|---------------|-------|---------|--------|
@@ -25,7 +25,7 @@ See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is
 
 ### Algorithm Performance
 
-For Dutch, performance of the algorithms was tested on three datasets to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm:
+For Dutch, performance of the algorithms was tested on three datasets ([CELEX](https://catalog.ldc.upenn.edu/LDC96L14), loan words derived from [de Sijs](https://www.dbnl.org/tekst/sijs002groo01_01/), pseudowords derived from [CHOREC](https://taalmaterialen.ivdnt.org/download/tstc-chorec-spraakcorpus/)) to evaluate algorithm effectiveness. Below displayed are the word error rate for each set for each algorithm:
 
 ![performance_comparison](https://github.com/user-attachments/assets/ae5ef9e5-7be5-4f34-a305-c691a4f3db2c)
 
