@@ -40,13 +40,11 @@ See end of page for short performance comparison applied to an actual document.
 
 # Usage
 
-Syllabificator requires the following dependencies:
-* Pandas
-* Numpy
-* Chaine
-* Python 3.11 environment with tensorflow 2.13 for the Neural Net.
+Syllabificator can be ran in two quick steps
+* Create new environment with python 3.11
+* Install requirements.txt
 
-Use the requirements.txt to copy the original virtual environment (see end of page).
+See end of page of full list of steps to install environment manually.
 
 ## Syllabifying words
 
