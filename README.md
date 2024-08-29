@@ -1,14 +1,15 @@
 # Syllabificator
 
-## General
-### Description
+Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). 
 
-Syllabificator is an open-source tool for splitting **words** into **syl-la-bles** (syllabify). The project aims to offer easy access to high-quality syllabification algorithms for Dutch and English. Two algorithms which match the best performance described in the literature are included:
+## Description
+
+Syllabificator  offer easy access to high-quality syllabification algorithms for Dutch and English. Two algorithms which match the best performance described in the literature are included:
 
 * **Conditional Random Field**. A 2010 model by Trogkanis and Elkan, replicated using Chaine (CRF package for Python). Trogkanis and Elkan report a word accuracy of 99.51% for Dutch dictionary words and 96.33% for English dictionary words, current replication scores 99.45% for Dutch dictionary words.
 * **Neural Net model**. A new approach that uses deep learning to analyze subword patterns (presented at CLIN 34). Comparisons shows improvements in comparison with the CRF model, especially on complex word forms (peak recorded accuracy of 99.57% on Dutch dictionary words).
 
-### Algorithms
+## Algorithms
 In total, five algorithms are included:
 
 | Algorithm   | Type          | Dutch | English | Origin |
@@ -19,8 +20,8 @@ In total, five algorithms are included:
 | CRF         | Conditional Random Field (Linear Chain)  | V     | V       |  Trogkanis, N., & Elkan, C. (2010). Conditional random fields for word hyphenation |
 | NN          | Deep learning (Neural Net)    | V     | V       | (Newly added) |
 
-* **!Note!** Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
-See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion on the differences.
+* Note that Syllabificator divides words according to **phonetic pronounciation**, which differs from word dividing based on **spelling conventions**.
+See [this page](https://new.reddit.com/r/asklinguistics/comments/1elahiq/what_is_the_point_of_hyphenations_in_dictionaries/) for a brief discussion.
 
 ### Algorithm Performance
 
