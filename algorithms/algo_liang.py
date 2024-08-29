@@ -1,10 +1,9 @@
+# This is a modification of Pyphen (see https://github.com/Kozea/Pyphen) that allows custom library support
+
 import re
 import os
 
 from pathlib import Path
-
-# THIS IS PYPHEN COPIED AND MODIFIED TO SUPPORT LOADING OF CUSTOM LIBRARIES
-# EASILY AND QUICKLY
 
 VERSION = __version__ = '0.14.0'
 
