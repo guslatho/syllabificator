@@ -1,3 +1,5 @@
+# Python implementation of algorithm mentioned in Brandt Corstius, H. (1970). Exercises in computational linguistics [Doctoral dissertation]. University of Amsterdam.
+
 import time
 import sys, os
 import pandas as pd
