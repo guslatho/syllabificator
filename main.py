@@ -68,8 +68,8 @@ def run_sets(*input_datasets, print_info=True):
                           print_help=print_info)
 
 # For hyphenating individual word. 'alg' selects which algorithm to use.
-# The neural net is trained for a max word length of 34 characters.
-def syllabificate_word(word, alg='l', pattern=2, w_size=20, language='nl'):
+# The neural net is trained for a max word length of 34/22 characters.
+def syllabificate_word(word, alg='c', pattern=2, w_size=20, language='nl'):
 
     if alg=='l':
         hyphenated = liang_syl(word)
@@ -80,10 +80,16 @@ def syllabificate_word(word, alg='l', pattern=2, w_size=20, language='nl'):
     if alg=='w':
         hyphenated = weijters_syl(word, checks=w_size)
     if alg=='n':
-        if language=='nl':
+        if language=='nl' and len(word)<34:
             hyphenated = nn_syl(word)
-        if language=='eng':
+        elif language=='nl' and len(word)>=34:
+            hyphenated = crf_syl(word)
+            print('Word with length>34 detected, replacing with CRF')
+        if language=='eng' and len(word)<22:
             hyphenated = nn_syl_eng(word)
+        elif language=='eng' and len(word)>=22:
+            hyphenated = crf_syl(word, language)
+            print('Word with length>22 detected, replacing with CRF')
 
     return hyphenated
 
@@ -128,3 +134,4 @@ def syllabificate_text(text, alg='c', pattern=2, w_size=2000, language='nl'):
     return ''.join(output)
 
 print('To syllabify text, use syllabificate_text(\'Een bepaalde tekststring.\')')
+
